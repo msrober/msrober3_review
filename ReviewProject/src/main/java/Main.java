@@ -50,11 +50,14 @@ import java.util.NoSuchElementException;
 				data.runAlgo(Integer.valueOf(choice).intValue()+1);
 
 
-			 } catch (NoSuchElementException e) {
+			 } 
+			catch (NoSuchElementException e) {
 				 System.out.println("Not enough numbers.");
-		     } catch (NumberFormatException e) {
+		     } 
+			catch (NumberFormatException e) {
 		    	 System.out.println("Please only use integer values. ");
-		     } catch (NegativeArraySizeException e) {
+		     } 
+			catch (NegativeArraySizeException e) {
 		    	 System.out.println("Negative Array Size.");
 		     }
 
