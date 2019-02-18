@@ -9,17 +9,37 @@ import java.util.*;   // for class StringTokenizer
 
 public class PowerSetData {
 
-    public int[] myArray;
-    public String algo;
+    private int[] myArray;
+    private String algo;
 
     public PowerSetData(){
-        myArray = null;
+        this.myArray = null;
+        this.algo = null;
     }
 
+    
+    public int[] getMyArray() {
+		return myArray;
+	}
 
-    // read numbers from input to array myArray
+
+	public void setMyArray(int[] myArray) {
+		this.myArray = myArray;
+	}
+
+
+	public String getAlgo() {
+		return algo;
+	}
+
+
+	public void setAlgo(String algo) {
+		this.algo = algo;
+	}
+
+	// read numbers from input to array myArray
     // duplicates should be removed
-    public void initializeArray(String string) throws NumberFormatException,
+	public void initializeArray(String string) throws NumberFormatException,
     NoSuchElementException, NegativeArraySizeException{
 
             StringTokenizer inputTokens = new StringTokenizer(string);
@@ -140,10 +160,3 @@ public class PowerSetData {
 
         }
     }
-
-
-
-
-
-
-
